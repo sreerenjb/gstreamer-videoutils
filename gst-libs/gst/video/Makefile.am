@@ -34,6 +34,7 @@ libgstvideo_@GST_MAJORMINOR@include_HEADERS = \
 nodist_libgstvideo_@GST_MAJORMINOR@include_HEADERS = $(built_headers)
 
 libgstvideo_@GST_MAJORMINOR@_la_CFLAGS = \
+	-I$(top_srcdir)/gst-libs \
 	$(GST_PLUGINS_BASE_CFLAGS)\
 	$(GST_BASE_CFLAGS) \
 	$(GST_CFLAGS) \
